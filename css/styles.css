@@ -549,6 +549,38 @@ progress {
   }
 }
 
+.collapsible {
+  background-color: black;
+  color: grey;
+  cursor: pointer;
+  padding: 0px;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+}
+
+.active, .collapsible:hover {
+  background-color: white;
+  opacity: 90;
+}
+
+.active_side, .collapsible_side:hover {
+  background-color: white;
+  opacity: 90;
+}
+
+/* Style the collapsible content. Note: hidden by default */
+.content {
+  padding: 0px;
+  display: none;
+  overflow: hidden;
+  background-color: black;
+  font-size: 18px;
+  
+}
+
+
 .display-6 {
   font-size: calc(1.375rem + 1.5vw);
   font-weight: 300;
@@ -2377,6 +2409,16 @@ progress {
   margin: -0.5rem -1rem;
   -webkit-margin-end: 1rem;
           margin-inline-end: 1rem;
+}
+
+.four_box {
+  width: 20%;
+  /* Each box takes 25% of the width */  
+  display: inline-block;
+  /* Align boxes in a line */
+  text-align: left;
+  /* Center text horizontally */
+  padding: 10px;
 }
 
 textarea.form-control {
@@ -4491,7 +4533,7 @@ textarea.form-control-lg {
 }
 .navbar-dark .navbar-nav .show > .nav-link,
 .navbar-dark .navbar-nav .nav-link.active {
-  color: #fff;
+  color: black;
 }
 .navbar-dark .navbar-toggler {
   color: rgba(255, 255, 255, 0.55);
@@ -7359,6 +7401,7 @@ textarea.form-control-lg {
 }
 
 .mb-0 {
+  color: #B2B2B2;
   margin-bottom: 0 !important;
 }
 
@@ -7718,8 +7761,8 @@ textarea.form-control-lg {
 
 /* rtl:end:remove */
 .text-primary {
-  --bs-text-opacity: 1;
-  color: rgba(var(--bs-primary-rgb), var(--bs-text-opacity)) !important;
+  opacity: 1;
+  color: white !important;
 }
 
 .text-secondary {
@@ -7810,7 +7853,8 @@ textarea.form-control-lg {
 
 .bg-primary {
   --bs-bg-opacity: 1;
-  background-color: rgba(var(--bs-primary-rgb), var(--bs-bg-opacity)) !important;
+  background-color: grey;
+
 }
 
 .bg-secondary {
@@ -11291,6 +11335,7 @@ textarea.form-control-lg {
 }
 body {
   padding-top: 3.375rem;
+  background-color: #000;
   color: #6c757d;
 }
 
@@ -11325,7 +11370,8 @@ p.lead {
 
 .subheading {
   font-family: "Saira Extra Condensed", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  text-transform: uppercase;
+  text-transform: none;
+  font-weight: 200;
   font-weight: 500;
   font-size: 1.5rem;
 }
@@ -11372,6 +11418,7 @@ p.lead {
     flex-grow: 0;
     width: 100%;
     margin-bottom: auto;
+    
   }
   #sideNav .navbar-collapse .navbar-nav {
     flex-direction: column;
