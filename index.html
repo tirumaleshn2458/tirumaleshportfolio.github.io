@@ -390,7 +390,7 @@
 <div class="wrap">
   <!-- 00 HERO -->
   <header class="hero" id="top">
-    <div class="eyebrow">Software Engineer · Chicago</div>
+    <div class="eyebrow">Full Stack AI Engineer · Chicago</div>
     <h1 class="name">
       <span class="l"><span>TIRUMALESH</span></span>
       <span class="l"><span>NAGOTHI</span></span>
@@ -440,59 +440,63 @@
     <div class="timeline">
       <div class="job">
         <div class="when">Feb 2026 to Present</div>
-        <h3>Software Engineer</h3>
-        <div class="co"><b>Prozech Solutions</b> · Chicago, IL</div>
+        <h3>Full Stack AI Developer</h3>
+        <div class="co"><b>Prozech Solution</b> · USA</div>
         <ul>
-          <li>Designed an <b>asynchronous document-processing pipeline</b> (FastAPI + Celery) that handles enterprise batches without blocking on slow model calls.</li>
-          <li>Engineered <b>hallucination controls</b> for production LLM extraction using schema validation, confidence thresholds, and explicit null handling to keep outputs trustworthy.</li>
-          <li>Implemented <b>model routing</b> that sends simple and complex documents to different models, controlling inference cost at volume.</li>
-          <li>Built a <b>human-in-the-loop correction loop</b> so reviewer edits continuously raise extraction accuracy.</li>
+          <li>Building a full-stack document intelligence platform that combines a <b>Next.js</b> review experience with a <b>FastAPI</b> backend, supporting more than <b>5,000 documents each day</b>.</li>
+          <li>Created an AI workflow that uses <b>LangChain, RAG, and GPT-4 Vision</b> to classify documents, extract their contents, validate the results, and surface uncertain answers for review.</li>
+          <li>Made long-running AI work feel responsive in the browser with <b>Server-Sent Events</b>, live confidence indicators, and review tools that let users correct a result without leaving the page.</li>
+          <li>Reduced model spending by <b>88%</b> by routing each document to the right model instead of treating every request as equally complex.</li>
+          <li>Built semantic retrieval with <b>Pinecone</b> and a GraphQL feedback path that turns reviewer corrections into better prompts, helping raise extraction accuracy from <b>75% to 98%</b>.</li>
+          <li>Packaged the system with <b>Docker</b> and deployed it to <b>AWS ECS</b> with auto-scaling and GitHub Actions, cutting the time required to ship updates by <b>40%</b>.</li>
         </ul>
       </div>
       <div class="job">
         <div class="when">Sep 2024 to Jan 2026</div>
         <h3>Founding Software Engineer</h3>
-        <div class="co"><b>RivalArc Inc</b> · Chicago, IL</div>
+        <div class="co"><b>Rivalarc</b> · USA</div>
         <ul>
-          <li>Built and launched a mobile-first social competition platform end to end, including video and image faceoffs, public voting, tournaments, rankings, and <b>ArcCoin</b> rewards, while owning the architecture, backend, mobile app, cloud, and deployment from MVP through production.</li>
-          <li>Shipped the <b>React Native</b> app with faceoff creation, voting, Explore, profiles, notifications, tournament screens, scorecards, guest flows, and deep linking, tuned for media-heavy screens.</li>
-          <li>Designed the <b>FastAPI + MongoDB + Redis</b> backend: REST APIs, JWT/session auth, vote processing, winner finalization, and scheduled tournament workflows.</li>
-          <li>Engineered <b>fraud-resistant voting</b> with device identifiers, unique-vote constraints, and Redis session checks, cutting duplicate and fake votes by <b>90%+</b>.</li>
-          <li>Owned <b>AWS</b> infrastructure (EC2, S3, Lambda, EventBridge, Load Balancer, Auto Scaling, NGINX, Docker) and S3/Lambda media pipelines, reducing deployment overhead ~<b>40%</b>.</li>
+          <li>Took Rivalarc from an early idea to a production social competition platform used by more than <b>1,250 people</b>, owning the product architecture across mobile, web, backend, and cloud.</li>
+          <li>Built the <b>React Native</b> application and <b>Next.js</b> admin tools behind faceoffs, community voting, tournaments, live rankings, notifications, profiles, and rewards.</li>
+          <li>Designed the platform services with <b>FastAPI, MongoDB, and Redis</b>, covering identity, sessions, voting, tournament workflows, rewards, and the APIs shared by the mobile and administrative clients.</li>
+          <li>Added real-time voting, leaderboards, and notifications with <b>WebSockets and Socket.io</b>, while using React Query and code splitting to keep media-heavy screens quick and responsive.</li>
+          <li>Protected competition results with device checks, vote constraints, and session validation, reducing fraudulent and duplicate voting by more than <b>90%</b>.</li>
+          <li>Owned the production path on <b>AWS</b>, including S3/Lambda media processing, CloudFront delivery, Docker, NGINX, load balancing, Terraform, and monitoring through Prometheus, Grafana, and CloudWatch.</li>
         </ul>
       </div>
       <div class="job dim">
         <div class="when">Jun 2024 to Aug 2024</div>
-        <h3>Software Engineering Intern</h3>
-        <div class="co"><b>Leap of Faith Technologies</b> · Chicago, IL · IIT × Kaplan Institute Accelerator</div>
+        <h3>Application Developer (Contract)</h3>
+        <div class="co"><b>Leap of Faith Technologies, Inc.</b> · Libertyville, IL</div>
         <ul>
-          <li>Built the data layer for <b>MedOptiX</b>, an AI system for automating Medicare <b>MIPS</b> value-based reporting, extracting and filtering structured and unstructured ED provider notes in <b>BigQuery</b> so downstream analysis ran on clean, complete clinical data.</li>
-          <li>Engineered extraction and filtration pipelines that turned unstructured <b>EHR</b> records into MIPS-ready inputs, cutting evaluation of a clinical note to <b>under one minute</b>.</li>
-          <li>Contributed to the <b>LLM prompt</b> that runs the MIPS decision flow like a domain analyst, extracting measure denominators and matching expert-level criteria analysis.</li>
-          <li>Helped drive <b>cost optimization</b> through model selection and prompt-token reduction, bringing processing cost <b>under $0.10 per note</b>.</li>
+          <li>Developed <b>MedOptiX</b>, a healthcare application that brings Medicare MIPS reporting, clinical records, and compliance analysis into one full-stack workflow.</li>
+          <li>Built the product with a <b>Next.js</b> frontend and <b>FastAPI</b> services, including authenticated APIs for retrieving clinical data and generating reports.</li>
+          <li>Designed the <b>PostgreSQL</b> structure for patient records and audit history, then wrote Python validation and transformation logic to reconcile clinical information arriving from different sources.</li>
+          <li>Created interactive reporting views with <b>Recharts</b> so users could understand compliance measures, patient information, and reporting trends without working through raw datasets.</li>
+          <li>Integrated external LLM services for text analysis and data extraction, with explicit error handling and fallback behavior to keep the application dependable when a provider failed.</li>
+          <li>Deployed the application on <b>AWS</b> using Docker and GitHub Actions, with CloudWatch monitoring for visibility into application health.</li>
         </ul>
       </div>
       <div class="job dim">
         <div class="when">Jan 2022 to Mar 2022</div>
-        <h3>Research Assistant</h3>
+        <h3>Research Assistant Student Tech Lead</h3>
         <div class="co"><b>GITAM University</b> · Visakhapatnam, India</div>
         <ul>
-          <li>Co-authored <b>published</b> machine-learning research predicting national university rankings from <b>NIRF</b> performance data.</li>
-          <li>Built models that forecast an institution's future rank from prior-year <b>performance indicators</b>.</li>
-          <li>Designed a <b>recommendation system</b> that flags which indicators an institution should improve to raise its future ranking.</li>
+          <li>Led the technical work on a machine-learning study that explored whether university rankings could be predicted from institutional performance data.</li>
+          <li>Built and evaluated the <b>scikit-learn</b> classification workflow behind the research, which was later published in the <b>Journal of Algebraic Statistics, Volume 13, Number 3</b>.</li>
+          <li>Mentored students during a faculty-supported mobile application development workshop, helping participants turn classroom concepts into working applications.</li>
+          <li>Worked directly with university stakeholders to secure support for technical-club activities and keep student-led programs operating.</li>
         </ul>
       </div>
       <div class="job dim">
         <div class="when">Jun 2021 to Nov 2022</div>
-        <h3>MLOps Engineer Intern</h3>
-        <div class="co"><b>TCR Innovations</b> · Mumbai, India</div>
+        <h3>ML Engineer</h3>
+        <div class="co"><b>TCR Innovation</b> · Mumbai, India</div>
         <ul>
-          <li>Worked on a <b>cancer prediction</b> project, using machine learning on medical diagnostic data to classify whether a case was likely <b>benign or malignant</b>.</li>
-          <li>Started with the data itself, cleaning and preparing it by handling missing values, removing outliers, and scaling features so the models had something reliable to learn from.</li>
-          <li>Explored the data to see which factors carried the most signal, using visualizations to spot patterns and relationships before any modeling began.</li>
-          <li>Built and compared several classification models, including <b>logistic regression, random forest, and SVM</b>, to see which approach predicted most reliably.</li>
-          <li>Tuned the models and judged them on more than raw accuracy, paying close attention to <b>recall</b> since missing a positive case matters most in a medical setting, reaching around <b>83% recall</b> on the best model.</li>
-          <li>Presented the results and the reasoning behind them clearly, so the findings made sense to people who were not deep in the modeling details.</li>
+          <li>Developed a cancer-diagnosis classification workflow in Python, turning raw medical data into a model-ready dataset through cleaning, feature engineering, and careful quality checks.</li>
+          <li>Compared logistic regression, random forest, and SVM approaches, tuning the models around the cost of missed positive cases and reaching <b>83% recall</b>.</li>
+          <li>Exposed the selected model through a <b>Flask API</b>, then containerized and deployed it on <b>AWS EC2</b> with model monitoring and version tracking.</li>
+          <li>Built <b>PySpark</b> ETL pipelines for larger processing workloads and added validation checks with Pandas and NumPy so unreliable input data was caught before inference.</li>
         </ul>
       </div>
     </div>
